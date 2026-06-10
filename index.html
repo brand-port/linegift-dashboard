@@ -74,7 +74,7 @@
     <div class="panel"><h2>商品別ランキング</h2><table id="prodTbl"><tbody></tbody></table></div>
   </div>
 
-  <div class="foot">15分ごとに自動更新 / 出典: LINE GIFT Shop API / Hugh Morgan 社内用</div>
+  <div class="foot">2時間ごとに自動更新 / 出典: LINE GIFT Shop API / Hugh Morgan 社内用</div>
 </div>
 <script>
 const yen = n => "¥" + Math.round(n||0).toLocaleString("ja-JP");
@@ -152,7 +152,7 @@ async function load(){
   build.daily(); built.daily = true;   // 既定タブ
 }
 load();
-setTimeout(()=>location.reload(), 15*60*1000);
+setTimeout(()=>location.reload(), 2*60*60*1000);
 </script>
 </body>
 </html>
