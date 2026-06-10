@@ -1,0 +1,199 @@
+{
+  "updated_at": "2026-06-11 07:52 JST",
+  "kpi": {
+    "month_gmv": 94816,
+    "month_count": 32,
+    "month_aov": 2963,
+    "today_gmv": 0,
+    "today_count": 0,
+    "total_gmv": 287411,
+    "total_count": 97,
+    "pipeline_count": 12,
+    "pipeline_amount": 35556,
+    "cancel_month": 0
+  },
+  "daily": [
+    {
+      "date": "05-13",
+      "gmv": 8889,
+      "count": 3
+    },
+    {
+      "date": "05-14",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-15",
+      "gmv": 17778,
+      "count": 6
+    },
+    {
+      "date": "05-16",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-17",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-18",
+      "gmv": 14815,
+      "count": 5
+    },
+    {
+      "date": "05-19",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-20",
+      "gmv": 2963,
+      "count": 1
+    },
+    {
+      "date": "05-21",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-22",
+      "gmv": 5926,
+      "count": 2
+    },
+    {
+      "date": "05-23",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-24",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-25",
+      "gmv": 17778,
+      "count": 6
+    },
+    {
+      "date": "05-26",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-27",
+      "gmv": 5926,
+      "count": 2
+    },
+    {
+      "date": "05-28",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-29",
+      "gmv": 26667,
+      "count": 9
+    },
+    {
+      "date": "05-30",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "05-31",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-01",
+      "gmv": 26667,
+      "count": 9
+    },
+    {
+      "date": "06-02",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-03",
+      "gmv": 20741,
+      "count": 7
+    },
+    {
+      "date": "06-04",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-05",
+      "gmv": 23704,
+      "count": 8
+    },
+    {
+      "date": "06-06",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-07",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-08",
+      "gmv": 23704,
+      "count": 8
+    },
+    {
+      "date": "06-09",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-10",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-11",
+      "gmv": 0,
+      "count": 0
+    }
+  ],
+  "status": [
+    {
+      "label": "取引完了",
+      "count": 97,
+      "amount": 287411
+    },
+    {
+      "label": "支払待ち",
+      "count": 9,
+      "amount": 26667
+    },
+    {
+      "label": "取引中止",
+      "count": 3,
+      "amount": 8889
+    },
+    {
+      "label": "メッセージ送信待ち",
+      "count": 3,
+      "amount": 8889
+    }
+  ],
+  "cancel_reasons": [
+    {
+      "reason": "gift-message-expired",
+      "count": 2
+    },
+    {
+      "reason": "payment-expired",
+      "count": 1
+    }
+  ]
+}
