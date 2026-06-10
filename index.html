@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>LINEギフト 売上ダッシュボード</title>
+<title>Hugh Morgan LINEギフト 売上ダッシュボード</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   :root{--navy:#1A2B5C;--green:#06C755;--bg:#f4f6fa;--card:#fff;--muted:#7a869a;--line:#e7ebf2;}
@@ -15,13 +15,16 @@
   header h1 .badge{background:var(--green);font-size:11px;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle}
   .updated{font-size:12px;color:#c3ccde}
   .wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:20px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:18px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 1px 3px rgba(20,40,80,.04)}
   .card .label{font-size:12px;color:var(--muted);font-weight:600}
   .card .value{font-size:26px;font-weight:800;margin-top:6px;letter-spacing:-.01em}
   .card .sub{font-size:12px;color:var(--muted);margin-top:4px}
   .card.accent{background:var(--navy);color:#fff}
   .card.accent .label,.card.accent .sub{color:#c3ccde}
+  .tabs{display:flex;gap:6px;margin-bottom:14px;border-bottom:2px solid var(--line)}
+  .tab{padding:9px 18px;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;margin-bottom:-2px}
+  .tab.active{color:var(--navy);border-bottom-color:var(--navy)}
   .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
   @media(max-width:820px){.grid{grid-template-columns:1fr}}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px}
@@ -29,69 +32,127 @@
   table{width:100%;border-collapse:collapse;font-size:13px}
   th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line)}
   th{color:var(--muted);font-weight:600}
-  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   .foot{font-size:11px;color:var(--muted);margin-top:18px;text-align:center}
 </style>
 </head>
 <body>
 <header>
-  <h1>LINEギフト 売上ダッシュボード<span class="badge">fuuz</span></h1>
+  <h1>LINEギフト 売上ダッシュボード<span class="badge">Hugh Morgan</span></h1>
   <div class="updated" id="updated">読み込み中…</div>
 </header>
 <div class="wrap">
   <div class="kpis" id="kpis"></div>
-  <div class="grid">
-    <div>
-      <div class="panel"><h2>日次GMV推移（直近30日・取引完了）</h2><canvas id="gmvChart" height="120"></canvas></div>
-      <div class="panel"><h2>日次 取引完了件数（直近30日）</h2><canvas id="cntChart" height="90"></canvas></div>
-    </div>
-    <div>
-      <div class="panel"><h2>ステータス別 内訳（全期間）</h2><canvas id="statusChart" height="200"></canvas></div>
-      <div class="panel"><h2>取引中止 理由</h2><table id="cancelTbl"><tbody></tbody></table></div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="daily" onclick="show('daily')">日次</button>
+    <button class="tab" data-tab="monthly" onclick="show('monthly')">月次</button>
+    <button class="tab" data-tab="products" onclick="show('products')">商品</button>
+  </div>
+
+  <div class="tabpanel" id="tab-daily">
+    <div class="grid">
+      <div>
+        <div class="panel"><h2>日次GMV推移（直近30日・取引完了）</h2><canvas id="gmvChart" height="120"></canvas></div>
+        <div class="panel"><h2>日次 取引完了件数（直近30日）</h2><canvas id="cntChart" height="90"></canvas></div>
+      </div>
+      <div>
+        <div class="panel"><h2>ステータス別 内訳（全期間）</h2><canvas id="statusChart" height="200"></canvas></div>
+        <div class="panel"><h2>取引中止 理由</h2><table id="cancelTbl"><tbody></tbody></table></div>
+      </div>
     </div>
   </div>
-  <div class="foot">15分ごとに自動更新 / 出典: LINE GIFT Shop API / fuuz社内用</div>
+
+  <div class="tabpanel" id="tab-monthly" style="display:none">
+    <div class="panel"><h2>月次GMV推移（取引完了）</h2><canvas id="mGmvChart" height="90"></canvas></div>
+    <div class="panel"><h2>月次 取引完了件数</h2><canvas id="mCntChart" height="70"></canvas></div>
+    <div class="panel"><h2>月次明細</h2><table id="monthlyTbl"><tbody></tbody></table></div>
+  </div>
+
+  <div class="tabpanel" id="tab-products" style="display:none">
+    <div class="panel"><h2>商品別GMV（取引完了・上位15）</h2><canvas id="prodChart" height="160"></canvas></div>
+    <div class="panel"><h2>商品別ランキング</h2><table id="prodTbl"><tbody></tbody></table></div>
+  </div>
+
+  <div class="foot">15分ごとに自動更新 / 出典: LINE GIFT Shop API / Hugh Morgan 社内用</div>
 </div>
 <script>
-const yen = n => "¥" + (n||0).toLocaleString("ja-JP");
+const yen = n => "¥" + Math.round(n||0).toLocaleString("ja-JP");
 const num = n => (n||0).toLocaleString("ja-JP");
+let D = null; const built = {};
 
 function kpiCard(label,value,sub,accent){
   return `<div class="card ${accent?'accent':''}"><div class="label">${label}</div>`+
          `<div class="value">${value}</div>${sub?`<div class="sub">${sub}</div>`:''}</div>`;
 }
 
+function show(tab){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
+  document.querySelectorAll('.tabpanel').forEach(p=>p.style.display = (p.id==='tab-'+tab)?'':'none');
+  if(D && !built[tab]){ build[tab](); built[tab]=true; }
+}
+
+const build = {
+  daily(){
+    const labels = D.daily.map(x=>x.date);
+    new Chart(gmvChart,{type:"line",data:{labels,datasets:[{data:D.daily.map(x=>x.gmv),
+      borderColor:"#06C755",backgroundColor:"rgba(6,199,85,.12)",fill:true,tension:.3,pointRadius:2}]},
+      options:{plugins:{legend:{display:false}},scales:{y:{ticks:{callback:v=>"¥"+v.toLocaleString()}}}}});
+    new Chart(cntChart,{type:"bar",data:{labels,datasets:[{data:D.daily.map(x=>x.count),
+      backgroundColor:"#1A2B5C"}]},options:{plugins:{legend:{display:false}},scales:{y:{ticks:{precision:0}}}}});
+    new Chart(statusChart,{type:"doughnut",data:{labels:D.status.map(s=>s.label),
+      datasets:[{data:D.status.map(s=>s.count),
+      backgroundColor:["#06C755","#1A2B5C","#f5a623","#e0245e","#9aa7bd","#6c5ce7"]}]},
+      options:{plugins:{legend:{position:"right"}}}});
+    const tb=document.querySelector("#cancelTbl tbody");
+    const cr=D.cancel_reasons||[];
+    tb.innerHTML="<tr><th>理由</th><th class='num'>件数</th></tr>"+
+      (cr.length?cr.map(r=>`<tr><td>${r.reason}</td><td class="num">${r.count}</td></tr>`).join("")
+       :"<tr><td colspan=2 style='color:#7a869a'>取引中止なし</td></tr>");
+  },
+  monthly(){
+    const m=D.monthly||[]; const labels=m.map(x=>x.month);
+    new Chart(mGmvChart,{type:"bar",data:{labels,datasets:[{label:"GMV",data:m.map(x=>x.gmv),
+      backgroundColor:"#06C755"}]},options:{plugins:{legend:{display:false}},
+      scales:{y:{ticks:{callback:v=>"¥"+v.toLocaleString()}}}}});
+    new Chart(mCntChart,{type:"line",data:{labels,datasets:[{label:"件数",data:m.map(x=>x.count),
+      borderColor:"#1A2B5C",backgroundColor:"rgba(26,43,92,.1)",fill:true,tension:.3,pointRadius:3}]},
+      options:{plugins:{legend:{display:false}},scales:{y:{ticks:{precision:0}}}}});
+    const tb=document.querySelector("#monthlyTbl tbody");
+    tb.innerHTML="<tr><th>月</th><th class='num'>GMV</th><th class='num'>件数</th><th class='num'>客単価</th></tr>"+
+      (m.length?m.slice().reverse().map(x=>`<tr><td>${x.month}</td><td class="num">${yen(x.gmv)}</td>`+
+       `<td class="num">${num(x.count)}</td><td class="num">${yen(x.count?x.gmv/x.count:0)}</td></tr>`).join("")
+       :"<tr><td colspan=4 style='color:#7a869a'>データなし</td></tr>");
+  },
+  products(){
+    const p=D.products||[];
+    new Chart(prodChart,{type:"bar",data:{labels:p.map(x=>x.name),
+      datasets:[{data:p.map(x=>x.gmv),backgroundColor:"#1A2B5C"}]},
+      options:{indexAxis:"y",plugins:{legend:{display:false}},
+      scales:{x:{ticks:{callback:v=>"¥"+v.toLocaleString()}}}}});
+    const tb=document.querySelector("#prodTbl tbody");
+    tb.innerHTML="<tr><th>商品名</th><th class='num'>販売数</th><th class='num'>注文数</th><th class='num'>GMV</th></tr>"+
+      (p.length?p.map(x=>`<tr><td>${x.name}</td><td class="num">${num(x.units)}</td>`+
+       `<td class="num">${num(x.orders)}</td><td class="num">${yen(x.gmv)}</td></tr>`).join("")
+       :"<tr><td colspan=4 style='color:#7a869a'>データなし</td></tr>");
+  }
+};
+
 async function load(){
   const res = await fetch("data.json?t=" + Date.now());
-  const d = await res.json();
-  document.getElementById("updated").textContent = "最終更新: " + d.updated_at;
-  const k = d.kpi;
+  D = await res.json();
+  document.getElementById("updated").textContent = "最終更新: " + D.updated_at;
+  const k = D.kpi;
   document.getElementById("kpis").innerHTML =
     kpiCard("今月 GMV(売上)", yen(k.month_gmv), `${num(k.month_count)}件 / 客単価 ${yen(k.month_aov)}`, true) +
     kpiCard("今日 GMV", yen(k.today_gmv), `${num(k.today_count)}件`) +
     kpiCard("パイプライン(処理中)", num(k.pipeline_count)+"件", `見込 ${yen(k.pipeline_amount)}`) +
     kpiCard("今月 取引中止", num(k.cancel_month)+"件", "失注") +
     kpiCard("全期間 GMV(蓄積)", yen(k.total_gmv), `${num(k.total_count)}件`);
-
-  const labels = d.daily.map(x=>x.date);
-  new Chart(gmvChart,{type:"line",data:{labels,datasets:[{data:d.daily.map(x=>x.gmv),
-    borderColor:"#06C755",backgroundColor:"rgba(6,199,85,.12)",fill:true,tension:.3,pointRadius:2}]},
-    options:{plugins:{legend:{display:false}},scales:{y:{ticks:{callback:v=>"¥"+v.toLocaleString()}}}}});
-  new Chart(cntChart,{type:"bar",data:{labels,datasets:[{data:d.daily.map(x=>x.count),
-    backgroundColor:"#1A2B5C"}]},options:{plugins:{legend:{display:false}},scales:{y:{ticks:{precision:0}}}}});
-  new Chart(statusChart,{type:"doughnut",data:{labels:d.status.map(s=>s.label),
-    datasets:[{data:d.status.map(s=>s.count),
-    backgroundColor:["#06C755","#1A2B5C","#f5a623","#e0245e","#9aa7bd","#6c5ce7"]}]},
-    options:{plugins:{legend:{position:"right"}}}});
-
-  const tb = document.querySelector("#cancelTbl tbody");
-  tb.innerHTML = "<tr><th>理由</th><th class='num'>件数</th></tr>" +
-    (d.cancel_reasons.length ? d.cancel_reasons.map(r=>
-      `<tr><td>${r.reason}</td><td class="num">${r.count}</td></tr>`).join("")
-      : "<tr><td colspan=2 style='color:#7a869a'>取引中止なし</td></tr>");
+  build.daily(); built.daily = true;   // 既定タブ
 }
 load();
-setTimeout(()=>location.reload(), 15*60*1000); // 15分ごとに再読込
+setTimeout(()=>location.reload(), 15*60*1000);
 </script>
 </body>
 </html>
