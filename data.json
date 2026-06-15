@@ -1,28 +1,18 @@
 {
-  "updated_at": "2026-06-13 19:23 JST",
+  "updated_at": "2026-06-15 11:50 JST",
   "kpi": {
-    "month_gmv": 130372,
-    "month_count": 44,
+    "month_gmv": 157039,
+    "month_count": 53,
     "month_aov": 2963,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 322967,
-    "total_count": 109,
-    "pipeline_count": 7,
-    "pipeline_amount": 20741,
+    "today_gmv": 26667,
+    "today_count": 9,
+    "total_gmv": 349634,
+    "total_count": 118,
+    "pipeline_count": 3,
+    "pipeline_amount": 8889,
     "cancel_month": 0
   },
   "daily": [
-    {
-      "date": "05-15",
-      "gmv": 17778,
-      "count": 6
-    },
-    {
-      "date": "05-16",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "05-17",
       "gmv": 0,
@@ -162,6 +152,16 @@
       "date": "06-13",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "06-14",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "06-15",
+      "gmv": 26667,
+      "count": 9
     }
   ],
   "monthly": [
@@ -182,8 +182,8 @@
     },
     {
       "month": "2026-06",
-      "gmv": 130372,
-      "count": 44
+      "gmv": 157039,
+      "count": 53
     }
   ],
   "products": [
@@ -195,27 +195,22 @@
     },
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 38,
-      "orders": 38,
-      "gmv": 112594
+      "units": 43,
+      "orders": 43,
+      "gmv": 127409
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 25,
-      "orders": 25,
-      "gmv": 74075
+      "units": 29,
+      "orders": 29,
+      "gmv": 85927
     }
   ],
   "status": [
     {
       "label": "取引完了",
-      "count": 109,
-      "amount": 322967
-    },
-    {
-      "label": "メッセージ送信待ち",
-      "count": 4,
-      "amount": 11852
+      "count": 118,
+      "amount": 349634
     },
     {
       "label": "取引中止",
@@ -223,7 +218,7 @@
       "amount": 8889
     },
     {
-      "label": "支払待ち",
+      "label": "メッセージ送信待ち",
       "count": 3,
       "amount": 8889
     }
