@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 07:24 JST",
+  "updated_at": "2026-06-17 10:08 JST",
   "kpi": {
     "month_gmv": 157039,
     "month_count": 53,
@@ -10,7 +10,7 @@
     "total_count": 118,
     "pipeline_count": 9,
     "pipeline_amount": 26667,
-    "cancel_month": 0
+    "cancel_month": 1
   },
   "daily": [
     {
@@ -218,14 +218,14 @@
       "amount": 14815
     },
     {
-      "label": "メッセージ送信待ち",
+      "label": "取引中止",
       "count": 4,
       "amount": 11852
     },
     {
-      "label": "取引中止",
-      "count": 3,
-      "amount": 8889
+      "label": "メッセージ送信待ち",
+      "count": 4,
+      "amount": 11852
     }
   ],
   "cancel_reasons": [
@@ -235,6 +235,10 @@
     },
     {
       "reason": "payment-expired",
+      "count": 1
+    },
+    {
+      "reason": "gift-address-expired",
       "count": 1
     }
   ]
