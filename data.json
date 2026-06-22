@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-06-21 08:17 JST",
+  "updated_at": "2026-06-22 10:22 JST",
   "kpi": {
     "month_gmv": 186669,
     "month_count": 63,
     "month_aov": 2963,
     "today_gmv": 0,
     "today_count": 0,
-    "total_gmv": 379264,
-    "total_count": 128,
+    "total_gmv": 376301,
+    "total_count": 127,
     "pipeline_count": 10,
     "pipeline_amount": 29630,
     "cancel_month": 1
   },
   "daily": [
-    {
-      "date": "05-23",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "05-24",
       "gmv": 0,
@@ -162,14 +157,14 @@
       "date": "06-21",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "06-22",
+      "gmv": 0,
+      "count": 0
     }
   ],
   "monthly": [
-    {
-      "month": "2026-03",
-      "gmv": 2963,
-      "count": 1
-    },
     {
       "month": "2026-04",
       "gmv": 71112,
@@ -195,9 +190,9 @@
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
-      "units": 46,
-      "orders": 46,
-      "gmv": 136298
+      "units": 45,
+      "orders": 45,
+      "gmv": 133335
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
@@ -209,23 +204,18 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 128,
-      "amount": 379264
+      "count": 127,
+      "amount": 376301
     },
     {
       "label": "支払待ち",
-      "count": 9,
-      "amount": 26667
+      "count": 10,
+      "amount": 29630
     },
     {
       "label": "取引中止",
       "count": 4,
       "amount": 11852
-    },
-    {
-      "label": "メッセージ送信待ち",
-      "count": 1,
-      "amount": 2963
     }
   ],
   "cancel_reasons": [
