@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-06-25 20:29 JST",
+  "updated_at": "2026-06-26 11:47 JST",
   "kpi": {
-    "month_gmv": 231114,
-    "month_count": 78,
+    "month_gmv": 237040,
+    "month_count": 80,
     "month_aov": 2963,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 420746,
-    "total_count": 142,
-    "pipeline_count": 3,
-    "pipeline_amount": 8889,
+    "today_gmv": 5926,
+    "today_count": 2,
+    "total_gmv": 426672,
+    "total_count": 144,
+    "pipeline_count": 5,
+    "pipeline_amount": 14815,
     "cancel_month": 1
   },
   "daily": [
-    {
-      "date": "05-27",
-      "gmv": 5926,
-      "count": 2
-    },
     {
       "date": "05-28",
       "gmv": 0,
@@ -162,6 +157,11 @@
       "date": "06-25",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "06-26",
+      "gmv": 5926,
+      "count": 2
     }
   ],
   "monthly": [
@@ -177,16 +177,16 @@
     },
     {
       "month": "2026-06",
-      "gmv": 231114,
-      "count": 78
+      "gmv": 237040,
+      "count": 80
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 57,
-      "orders": 57,
-      "gmv": 168891
+      "units": 59,
+      "orders": 59,
+      "gmv": 174817
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -204,8 +204,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 142,
-      "amount": 420746
+      "count": 144,
+      "amount": 426672
     },
     {
       "label": "取引中止",
@@ -214,13 +214,13 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 5926
+      "count": 3,
+      "amount": 8889
     },
     {
       "label": "支払待ち",
-      "count": 1,
-      "amount": 2963
+      "count": 2,
+      "amount": 5926
     }
   ],
   "cancel_reasons": [
