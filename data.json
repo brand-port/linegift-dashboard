@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01 13:38 JST",
+  "updated_at": "2026-07-01 15:38 JST",
   "kpi": {
     "month_gmv": 12869,
     "month_count": 4,
@@ -8,8 +8,8 @@
     "today_count": 4,
     "total_gmv": 466208,
     "total_count": 157,
-    "pipeline_count": 1,
-    "pipeline_amount": 2963,
+    "pipeline_count": 2,
+    "pipeline_amount": 5926,
     "cancel_month": 0
   },
   "daily": [
@@ -222,6 +222,11 @@
       "label": "取引中止",
       "count": 4,
       "amount": 11852
+    },
+    {
+      "label": "支払待ち",
+      "count": 1,
+      "amount": 2963
     },
     {
       "label": "メッセージ送信待ち",
