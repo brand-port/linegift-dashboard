@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-06-30 20:58 JST",
+  "updated_at": "2026-07-01 11:36 JST",
   "kpi": {
-    "month_gmv": 263707,
-    "month_count": 89,
-    "month_aov": 2963,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 453339,
-    "total_count": 153,
-    "pipeline_count": 4,
-    "pipeline_amount": 12869,
-    "cancel_month": 1
+    "month_gmv": 12869,
+    "month_count": 4,
+    "month_aov": 3217,
+    "today_gmv": 12869,
+    "today_count": 4,
+    "total_gmv": 466208,
+    "total_count": 157,
+    "pipeline_count": 1,
+    "pipeline_amount": 2963,
+    "cancel_month": 0
   },
   "daily": [
-    {
-      "date": "06-01",
-      "gmv": 26667,
-      "count": 9
-    },
     {
       "date": "06-02",
       "gmv": 0,
@@ -162,6 +157,11 @@
       "date": "06-30",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "07-01",
+      "gmv": 12869,
+      "count": 4
     }
   ],
   "monthly": [
@@ -179,14 +179,25 @@
       "month": "2026-06",
       "gmv": 263707,
       "count": 89
+    },
+    {
+      "month": "2026-07",
+      "gmv": 12869,
+      "count": 4
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 64,
-      "orders": 64,
-      "gmv": 189632
+      "units": 65,
+      "orders": 65,
+      "gmv": 192595
+    },
+    {
+      "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
+      "units": 46,
+      "orders": 46,
+      "gmv": 136298
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -195,27 +206,22 @@
       "gmv": 133335
     },
     {
-      "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 44,
-      "orders": 44,
-      "gmv": 130372
+      "name": "サブレ・ヒューモルガン・アソート 12枚",
+      "units": 1,
+      "orders": 1,
+      "gmv": 3980
     }
   ],
   "status": [
     {
       "label": "取引完了",
-      "count": 153,
-      "amount": 453339
+      "count": 157,
+      "amount": 466208
     },
     {
       "label": "取引中止",
       "count": 4,
       "amount": 11852
-    },
-    {
-      "label": "支払待ち",
-      "count": 3,
-      "amount": 9906
     },
     {
       "label": "メッセージ送信待ち",
