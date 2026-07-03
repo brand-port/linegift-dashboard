@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-03 07:28 JST",
+  "updated_at": "2026-07-03 10:54 JST",
   "kpi": {
-    "month_gmv": 12869,
-    "month_count": 4,
-    "month_aov": 3217,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 466208,
-    "total_count": 157,
-    "pipeline_count": 3,
-    "pipeline_amount": 8889,
+    "month_gmv": 18795,
+    "month_count": 6,
+    "month_aov": 3132,
+    "today_gmv": 5926,
+    "today_count": 2,
+    "total_gmv": 472134,
+    "total_count": 159,
+    "pipeline_count": 1,
+    "pipeline_amount": 2963,
     "cancel_month": 0
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "07-03",
-      "gmv": 0,
-      "count": 0
+      "gmv": 5926,
+      "count": 2
     }
   ],
   "monthly": [
@@ -182,22 +182,22 @@
     },
     {
       "month": "2026-07",
-      "gmv": 12869,
-      "count": 4
+      "gmv": 18795,
+      "count": 6
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 65,
-      "orders": 65,
-      "gmv": 192595
+      "units": 66,
+      "orders": 66,
+      "gmv": 195558
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 46,
-      "orders": 46,
-      "gmv": 136298
+      "units": 47,
+      "orders": 47,
+      "gmv": 139261
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -215,18 +215,13 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 157,
-      "amount": 466208
+      "count": 159,
+      "amount": 472134
     },
     {
       "label": "取引中止",
       "count": 4,
       "amount": 11852
-    },
-    {
-      "label": "支払待ち",
-      "count": 2,
-      "amount": 5926
     },
     {
       "label": "メッセージ送信待ち",
