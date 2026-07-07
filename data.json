@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-07 07:55 JST",
+  "updated_at": "2026-07-07 09:55 JST",
   "kpi": {
-    "month_gmv": 18795,
-    "month_count": 6,
-    "month_aov": 3132,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 472134,
-    "total_count": 159,
-    "pipeline_count": 15,
-    "pipeline_amount": 46479,
+    "month_gmv": 42499,
+    "month_count": 14,
+    "month_aov": 3036,
+    "today_gmv": 23704,
+    "today_count": 8,
+    "total_gmv": 495838,
+    "total_count": 167,
+    "pipeline_count": 8,
+    "pipeline_amount": 25738,
     "cancel_month": 0
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "07-07",
-      "gmv": 0,
-      "count": 0
+      "gmv": 23704,
+      "count": 8
     }
   ],
   "monthly": [
@@ -182,22 +182,22 @@
     },
     {
       "month": "2026-07",
-      "gmv": 18795,
-      "count": 6
+      "gmv": 42499,
+      "count": 14
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 66,
-      "orders": 66,
-      "gmv": 195558
+      "units": 70,
+      "orders": 70,
+      "gmv": 207410
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 47,
-      "orders": 47,
-      "gmv": 139261
+      "units": 51,
+      "orders": 51,
+      "gmv": 151113
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -215,13 +215,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 159,
-      "amount": 472134
-    },
-    {
-      "label": "支払待ち",
-      "count": 8,
-      "amount": 23704
+      "count": 167,
+      "amount": 495838
     },
     {
       "label": "取引中止",
@@ -229,14 +224,19 @@
       "amount": 11852
     },
     {
-      "label": "メッセージ送信待ち",
-      "count": 4,
-      "amount": 12869
-    },
-    {
       "label": "cvs",
       "count": 3,
       "amount": 9906
+    },
+    {
+      "label": "メッセージ送信待ち",
+      "count": 3,
+      "amount": 9906
+    },
+    {
+      "label": "支払待ち",
+      "count": 2,
+      "amount": 5926
     }
   ],
   "cancel_reasons": [
