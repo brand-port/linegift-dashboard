@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08 13:28 JST",
+  "updated_at": "2026-07-08 18:13 JST",
   "kpi": {
     "month_gmv": 42499,
     "month_count": 14,
@@ -220,8 +220,8 @@
     },
     {
       "label": "支払待ち",
-      "count": 5,
-      "amount": 15832
+      "count": 6,
+      "amount": 18795
     },
     {
       "label": "取引中止",
@@ -230,8 +230,8 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 4,
-      "amount": 12869
+      "count": 3,
+      "amount": 9906
     },
     {
       "label": "cvs",
