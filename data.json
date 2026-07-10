@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09 21:38 JST",
+  "updated_at": "2026-07-10 09:24 JST",
   "kpi": {
     "month_gmv": 58331,
     "month_count": 19,
@@ -10,14 +10,9 @@
     "total_count": 170,
     "pipeline_count": 8,
     "pipeline_amount": 24721,
-    "cancel_month": 0
+    "cancel_month": 1
   },
   "daily": [
-    {
-      "date": "06-10",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "06-11",
       "gmv": 0,
@@ -162,6 +157,11 @@
       "date": "07-09",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "07-10",
+      "gmv": 0,
+      "count": 0
     }
   ],
   "monthly": [
@@ -226,6 +226,11 @@
     },
     {
       "label": "取引中止",
+      "count": 5,
+      "amount": 14815
+    },
+    {
+      "label": "支払待ち",
       "count": 4,
       "amount": 11852
     },
@@ -233,26 +238,16 @@
       "label": "メッセージ送信待ち",
       "count": 4,
       "amount": 12869
-    },
-    {
-      "label": "支払待ち",
-      "count": 3,
-      "amount": 8889
-    },
-    {
-      "label": "cvs",
-      "count": 1,
-      "amount": 2963
     }
   ],
   "cancel_reasons": [
     {
-      "reason": "gift-message-expired",
+      "reason": "payment-expired",
       "count": 2
     },
     {
-      "reason": "payment-expired",
-      "count": 1
+      "reason": "gift-message-expired",
+      "count": 2
     },
     {
       "reason": "gift-address-expired",
