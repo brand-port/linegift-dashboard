@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11 08:53 JST",
+  "updated_at": "2026-07-13 11:08 JST",
   "kpi": {
     "month_gmv": 70183,
     "month_count": 23,
@@ -8,21 +8,11 @@
     "today_count": 0,
     "total_gmv": 517596,
     "total_count": 174,
-    "pipeline_count": 6,
-    "pipeline_amount": 18795,
-    "cancel_month": 1
+    "pipeline_count": 8,
+    "pipeline_amount": 23704,
+    "cancel_month": 2
   },
   "daily": [
-    {
-      "date": "06-12",
-      "gmv": 35556,
-      "count": 12
-    },
-    {
-      "date": "06-13",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "06-14",
       "gmv": 0,
@@ -162,6 +152,16 @@
       "date": "07-11",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "07-12",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "07-13",
+      "gmv": 0,
+      "count": 0
     }
   ],
   "monthly": [
@@ -225,22 +225,17 @@
       "amount": 517596
     },
     {
-      "label": "取引中止",
-      "count": 5,
-      "amount": 14815
+      "label": "支払待ち",
+      "count": 7,
+      "amount": 20741
     },
     {
-      "label": "支払待ち",
-      "count": 3,
-      "amount": 8889
+      "label": "取引中止",
+      "count": 6,
+      "amount": 18795
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 6943
-    },
-    {
-      "label": "order",
       "count": 1,
       "amount": 2963
     }
@@ -256,7 +251,7 @@
     },
     {
       "reason": "gift-address-expired",
-      "count": 1
+      "count": 2
     }
   ]
 }
