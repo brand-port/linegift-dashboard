@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-14 07:39 JST",
+  "updated_at": "2026-07-14 09:52 JST",
   "kpi": {
     "month_gmv": 90924,
     "month_count": 30,
     "month_aov": 3031,
     "today_gmv": 0,
     "today_count": 0,
-    "total_gmv": 538337,
-    "total_count": 181,
+    "total_gmv": 523522,
+    "total_count": 176,
     "pipeline_count": 3,
     "pipeline_amount": 8889,
     "cancel_month": 2
@@ -167,8 +167,8 @@
   "monthly": [
     {
       "month": "2026-04",
-      "gmv": 65186,
-      "count": 22
+      "gmv": 50371,
+      "count": 17
     },
     {
       "month": "2026-05",
@@ -201,9 +201,9 @@
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
-      "units": 43,
-      "orders": 43,
-      "gmv": 127409
+      "units": 38,
+      "orders": 38,
+      "gmv": 112594
     },
     {
       "name": "サブレ・ヒューモルガン・アソート 12枚",
@@ -221,8 +221,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 181,
-      "amount": 538337
+      "count": 176,
+      "amount": 523522
     },
     {
       "label": "取引中止",
