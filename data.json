@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-07-16 15:13 JST",
+  "updated_at": "2026-07-17 10:36 JST",
   "kpi": {
-    "month_gmv": 102776,
-    "month_count": 34,
-    "month_aov": 3023,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 523522,
-    "total_count": 176,
-    "pipeline_count": 6,
-    "pipeline_amount": 18795,
-    "cancel_month": 2
+    "month_gmv": 118608,
+    "month_count": 39,
+    "month_aov": 3041,
+    "today_gmv": 15832,
+    "today_count": 5,
+    "total_gmv": 539354,
+    "total_count": 181,
+    "pipeline_count": 1,
+    "pipeline_amount": 2963,
+    "cancel_month": 3
   },
   "daily": [
-    {
-      "date": "06-17",
-      "gmv": 14815,
-      "count": 5
-    },
     {
       "date": "06-18",
       "gmv": 0,
@@ -162,6 +157,11 @@
       "date": "07-16",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "07-17",
+      "gmv": 15832,
+      "count": 5
     }
   ],
   "monthly": [
@@ -182,22 +182,22 @@
     },
     {
       "month": "2026-07",
-      "gmv": 102776,
-      "count": 34
+      "gmv": 118608,
+      "count": 39
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 82,
-      "orders": 82,
-      "gmv": 242966
+      "units": 85,
+      "orders": 85,
+      "gmv": 251855
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 58,
-      "orders": 58,
-      "gmv": 171854
+      "units": 59,
+      "orders": 59,
+      "gmv": 174817
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -207,9 +207,9 @@
     },
     {
       "name": "サブレ・ヒューモルガン・アソート 12枚",
-      "units": 1,
-      "orders": 1,
-      "gmv": 3980
+      "units": 2,
+      "orders": 2,
+      "gmv": 7960
     },
     {
       "name": "サブレ・ヒューモルガン 12枚",
@@ -221,36 +221,31 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 176,
-      "amount": 523522
+      "count": 181,
+      "amount": 539354
     },
     {
       "label": "取引中止",
-      "count": 6,
-      "amount": 18795
+      "count": 7,
+      "amount": 21758
     },
     {
       "label": "支払待ち",
-      "count": 3,
-      "amount": 9906
-    },
-    {
-      "label": "メッセージ送信待ち",
-      "count": 3,
-      "amount": 8889
+      "count": 1,
+      "amount": 2963
     }
   ],
   "cancel_reasons": [
+    {
+      "reason": "gift-address-expired",
+      "count": 3
+    },
     {
       "reason": "payment-expired",
       "count": 2
     },
     {
       "reason": "gift-message-expired",
-      "count": 2
-    },
-    {
-      "reason": "gift-address-expired",
       "count": 2
     }
   ]
