@@ -1,33 +1,18 @@
 {
-  "updated_at": "2026-07-17 14:38 JST",
+  "updated_at": "2026-07-20 15:18 JST",
   "kpi": {
-    "month_gmv": 118608,
-    "month_count": 39,
-    "month_aov": 3041,
-    "today_gmv": 15832,
-    "today_count": 5,
-    "total_gmv": 539354,
-    "total_count": 181,
+    "month_gmv": 124534,
+    "month_count": 41,
+    "month_aov": 3037,
+    "today_gmv": 5926,
+    "today_count": 2,
+    "total_gmv": 536391,
+    "total_count": 180,
     "pipeline_count": 1,
     "pipeline_amount": 2963,
     "cancel_month": 3
   },
   "daily": [
-    {
-      "date": "06-18",
-      "gmv": 0,
-      "count": 0
-    },
-    {
-      "date": "06-19",
-      "gmv": 14815,
-      "count": 5
-    },
-    {
-      "date": "06-20",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "06-21",
       "gmv": 0,
@@ -162,13 +147,28 @@
       "date": "07-17",
       "gmv": 15832,
       "count": 5
+    },
+    {
+      "date": "07-18",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "07-19",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "07-20",
+      "gmv": 5926,
+      "count": 2
     }
   ],
   "monthly": [
     {
       "month": "2026-04",
-      "gmv": 38519,
-      "count": 13
+      "gmv": 29630,
+      "count": 10
     },
     {
       "month": "2026-05",
@@ -182,28 +182,28 @@
     },
     {
       "month": "2026-07",
-      "gmv": 118608,
-      "count": 39
+      "gmv": 124534,
+      "count": 41
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 85,
-      "orders": 85,
-      "gmv": 251855
+      "units": 86,
+      "orders": 86,
+      "gmv": 254818
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 59,
-      "orders": 59,
-      "gmv": 174817
+      "units": 60,
+      "orders": 60,
+      "gmv": 177780
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
-      "units": 34,
-      "orders": 34,
-      "gmv": 100742
+      "units": 31,
+      "orders": 31,
+      "gmv": 91853
     },
     {
       "name": "サブレ・ヒューモルガン・アソート 12枚",
@@ -221,8 +221,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 181,
-      "amount": 539354
+      "count": 180,
+      "amount": 536391
     },
     {
       "label": "取引中止",
@@ -230,7 +230,7 @@
       "amount": 21758
     },
     {
-      "label": "支払待ち",
+      "label": "メッセージ送信待ち",
       "count": 1,
       "amount": 2963
     }
