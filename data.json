@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-27 13:16 JST",
+  "updated_at": "2026-07-27 21:24 JST",
   "kpi": {
-    "month_gmv": 145275,
-    "month_count": 48,
-    "month_aov": 3027,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 542317,
-    "total_count": 182,
-    "pipeline_count": 9,
-    "pipeline_amount": 28684,
+    "month_gmv": 168033,
+    "month_count": 55,
+    "month_aov": 3055,
+    "today_gmv": 22758,
+    "today_count": 7,
+    "total_gmv": 565075,
+    "total_count": 189,
+    "pipeline_count": 3,
+    "pipeline_amount": 8889,
     "cancel_month": 3
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "07-27",
-      "gmv": 0,
-      "count": 0
+      "gmv": 22758,
+      "count": 7
     }
   ],
   "monthly": [
@@ -182,22 +182,22 @@
     },
     {
       "month": "2026-07",
-      "gmv": 145275,
-      "count": 48
+      "gmv": 168033,
+      "count": 55
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 91,
-      "orders": 91,
-      "gmv": 269633
+      "units": 93,
+      "orders": 93,
+      "gmv": 275559
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 62,
-      "orders": 62,
-      "gmv": 183706
+      "units": 66,
+      "orders": 66,
+      "gmv": 195558
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -212,6 +212,12 @@
       "gmv": 7960
     },
     {
+      "name": "アソート・ヴァニーユ M-3",
+      "units": 1,
+      "orders": 1,
+      "gmv": 4980
+    },
+    {
       "name": "サブレ・ヒューモルガン 12枚",
       "units": 1,
       "orders": 1,
@@ -221,13 +227,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 182,
-      "amount": 542317
-    },
-    {
-      "label": "支払待ち",
-      "count": 7,
-      "amount": 22758
+      "count": 189,
+      "amount": 565075
     },
     {
       "label": "取引中止",
@@ -236,8 +237,8 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 5926
+      "count": 3,
+      "amount": 8889
     }
   ],
   "cancel_reasons": [
