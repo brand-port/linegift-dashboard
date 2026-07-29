@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28 21:42 JST",
+  "updated_at": "2026-07-29 13:31 JST",
   "kpi": {
     "month_gmv": 168033,
     "month_count": 55,
@@ -13,11 +13,6 @@
     "cancel_month": 3
   },
   "daily": [
-    {
-      "date": "06-29",
-      "gmv": 26667,
-      "count": 9
-    },
     {
       "date": "06-30",
       "gmv": 0,
@@ -160,6 +155,11 @@
     },
     {
       "date": "07-28",
+      "gmv": 0,
+      "count": 0
+    },
+    {
+      "date": "07-29",
       "gmv": 0,
       "count": 0
     }
