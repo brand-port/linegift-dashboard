@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-08-04 14:18 JST",
+  "updated_at": "2026-08-05 11:21 JST",
   "kpi": {
-    "month_gmv": 0,
-    "month_count": 0,
-    "month_aov": 0,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 559149,
-    "total_count": 187,
-    "pipeline_count": 7,
-    "pipeline_amount": 20694,
+    "month_gmv": 8889,
+    "month_count": 3,
+    "month_aov": 2963,
+    "today_gmv": 8889,
+    "today_count": 3,
+    "total_gmv": 568038,
+    "total_count": 190,
+    "pipeline_count": 5,
+    "pipeline_amount": 14768,
     "cancel_month": 0
   },
   "daily": [
-    {
-      "date": "07-06",
-      "gmv": 0,
-      "count": 0
-    },
     {
       "date": "07-07",
       "gmv": 23704,
@@ -162,6 +157,11 @@
       "date": "08-04",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "08-05",
+      "gmv": 8889,
+      "count": 3
     }
   ],
   "monthly": [
@@ -179,20 +179,25 @@
       "month": "2026-07",
       "gmv": 188774,
       "count": 62
+    },
+    {
+      "month": "2026-08",
+      "gmv": 8889,
+      "count": 3
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 98,
-      "orders": 98,
-      "gmv": 290374
+      "units": 100,
+      "orders": 100,
+      "gmv": 296300
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 68,
-      "orders": 68,
-      "gmv": 201484
+      "units": 69,
+      "orders": 69,
+      "gmv": 204447
     },
     {
       "name": "【誕生日パッケージ】マカロン・ヴァニーユ  5個入",
@@ -222,8 +227,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 187,
-      "amount": 559149
+      "count": 190,
+      "amount": 568038
     },
     {
       "label": "取引中止",
@@ -231,14 +236,9 @@
       "amount": 24721
     },
     {
-      "label": "支払待ち",
-      "count": 3,
-      "amount": 8889
-    },
-    {
       "label": "メッセージ送信待ち",
-      "count": 3,
-      "amount": 8889
+      "count": 4,
+      "amount": 11852
     },
     {
       "label": "cvs",
