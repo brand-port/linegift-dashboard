@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06 14:40 JST",
+  "updated_at": "2026-08-06 16:43 JST",
   "kpi": {
     "month_gmv": 8889,
     "month_count": 3,
@@ -8,8 +8,8 @@
     "today_count": 0,
     "total_gmv": 565075,
     "total_count": 189,
-    "pipeline_count": 6,
-    "pipeline_amount": 17731,
+    "pipeline_count": 7,
+    "pipeline_amount": 20694,
     "cancel_month": 0
   },
   "daily": [
@@ -242,8 +242,8 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 5926
+      "count": 3,
+      "amount": 8889
     },
     {
       "label": "cvs",
