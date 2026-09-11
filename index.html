@@ -34,6 +34,12 @@
   th{color:var(--muted);font-weight:600}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   .foot{font-size:11px;color:var(--muted);margin-top:18px;text-align:center}
+  .stale{display:none;border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:13px;font-weight:700;line-height:1.6}
+  .stale.warn{display:block;background:#fff6e5;border:1px solid #f5a623;color:#8a5a00}
+  .stale.dead{display:block;background:#fdecef;border:1px solid #e0245e;color:#a3103a}
+  .stale .note{display:block;font-weight:500;margin-top:4px;font-size:12px}
+  .updated.warn{color:#ffd27a}
+  .updated.dead{color:#ff9db4;font-weight:700}
 </style>
 </head>
 <body>
@@ -42,6 +48,7 @@
   <div class="updated" id="updated">読み込み中…</div>
 </header>
 <div class="wrap">
+  <div class="stale" id="stale"></div>
   <div class="kpis" id="kpis"></div>
 
   <div class="tabs">
@@ -138,10 +145,36 @@ const build = {
   }
 };
 
+// ★ 2026-09-11 追加: データの古さをバナーで自己申告する。
+// 2026-08-07〜09-11 の35日間、トークン失効で取込が止まっていたが
+// 画面は平常表示のままで、見ても古いと気付けなかった。
+function renderFreshness(updatedAt){
+  const el = document.getElementById("updated");
+  const banner = document.getElementById("stale");
+  el.textContent = "最終更新: " + updatedAt;
+  // "YYYY-MM-DD HH:MM JST" → Date
+  const m = /^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})/.exec(updatedAt || "");
+  if(!m) return;
+  const t = Date.parse(`${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:00+09:00`);
+  if(isNaN(t)) return;
+  const hours = (Date.now() - t) / 3600000;
+  if(hours < 6) return;                       // 更新は2時間ごと。6時間以内は正常とみなす
+  const days = Math.floor(hours / 24);
+  const ago = days >= 1 ? `${days}日` : `${Math.floor(hours)}時間`;
+  const dead = hours >= 24;
+  el.className = "updated " + (dead ? "dead" : "warn");
+  banner.className = "stale " + (dead ? "dead" : "warn");
+  banner.innerHTML = dead
+    ? `⚠️ 自動更新が停止しています。以下の数値は <b>${ago}前</b>のデータであり、現在の実績ではありません。`
+      + `<span class="note">LINE GIFT Shop API の access_token は有効期限60日で、自動更新できません。`
+      + `ターミナルで <code>python3 ~/bin/linegift/auth.py</code> を実行し、ブラウザで再認可してください。</span>`
+    : `⚠️ 直近の更新がありません（最終更新は ${ago}前・通常2時間ごと）。取込ジョブの状態を確認してください。`;
+}
+
 async function load(){
   const res = await fetch("data.json?t=" + Date.now());
   D = await res.json();
-  document.getElementById("updated").textContent = "最終更新: " + D.updated_at;
+  renderFreshness(D.updated_at);
   const k = D.kpi;
   document.getElementById("kpis").innerHTML =
     kpiCard("今月 GMV(売上)", yen(k.month_gmv), `${num(k.month_count)}件 / 客単価 ${yen(k.month_aov)}`, true) +
