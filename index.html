@@ -77,7 +77,7 @@
   </div>
 
   <div class="tabpanel" id="tab-products" style="display:none">
-    <div class="panel"><h2>商品別GMV（取引完了・上位15）</h2><canvas id="prodChart" height="160"></canvas></div>
+    <div class="panel"><h2>商品別GMV（取引完了・上位15）<span id="prodCov" style="font-weight:500;color:var(--muted);font-size:12px"></span></h2><canvas id="prodChart" height="160"></canvas></div>
     <div class="panel"><h2>商品別ランキング</h2><table id="prodTbl"><tbody></tbody></table></div>
   </div>
 
@@ -133,6 +133,10 @@ const build = {
   },
   products(){
     const p=D.products||[];
+    // 商品名はAPI応答(直近90日)からしか取れないため、累計KPIとカバー範囲が異なる
+    const cov=D.products_coverage;
+    if(cov) document.getElementById("prodCov").textContent =
+      ` — ${cov} のみ（商品名はAPI直近90日分しか取得できないため累計とは一致しません）`;
     new Chart(prodChart,{type:"bar",data:{labels:p.map(x=>x.name),
       datasets:[{data:p.map(x=>x.gmv),backgroundColor:"#1A2B5C"}]},
       options:{indexAxis:"y",plugins:{legend:{display:false}},
