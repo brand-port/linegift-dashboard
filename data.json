@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-11 10:38 JST",
+  "updated_at": "2026-09-11 10:41 JST",
   "kpi": {
     "month_gmv": 72308,
     "month_count": 21,
     "month_aov": 3443,
     "today_gmv": 0,
     "today_count": 0,
-    "total_gmv": 559294,
-    "total_count": 181,
-    "pipeline_count": 3,
-    "pipeline_amount": 12923,
+    "total_gmv": 882261,
+    "total_count": 290,
+    "pipeline_count": 6,
+    "pipeline_amount": 22737,
     "cancel_month": 0
   },
   "daily": [
@@ -166,9 +166,24 @@
   ],
   "monthly": [
     {
+      "month": "2026-03",
+      "gmv": 2963,
+      "count": 1
+    },
+    {
+      "month": "2026-04",
+      "gmv": 71112,
+      "count": 24
+    },
+    {
+      "month": "2026-05",
+      "gmv": 118520,
+      "count": 40
+    },
+    {
       "month": "2026-06",
-      "gmv": 133335,
-      "count": 45
+      "gmv": 263707,
+      "count": 89
     },
     {
       "month": "2026-07",
@@ -242,16 +257,22 @@
       "gmv": 3980
     }
   ],
+  "products_coverage": "2026-06〜2026-09",
   "status": [
     {
       "label": "取引完了",
-      "count": 181,
-      "amount": 559294
+      "count": 290,
+      "amount": 882261
     },
     {
       "label": "取引中止",
-      "count": 7,
-      "amount": 21711
+      "count": 10,
+      "amount": 30600
+    },
+    {
+      "label": "order",
+      "count": 3,
+      "amount": 9814
     },
     {
       "label": "メッセージ送信待ち",
@@ -271,6 +292,10 @@
     },
     {
       "reason": "payment-expired",
+      "count": 3
+    },
+    {
+      "reason": "gift-message-expired",
       "count": 2
     }
   ]
