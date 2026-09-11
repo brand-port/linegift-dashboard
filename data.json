@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11 10:43 JST",
+  "updated_at": "2026-09-11 10:44 JST",
   "kpi": {
     "month_gmv": 72308,
     "month_count": 21,
@@ -270,7 +270,7 @@
       "amount": 30600
     },
     {
-      "label": "order",
+      "label": "受注済み",
       "count": 3,
       "amount": 9814
     },
