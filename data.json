@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-16 22:32 JST",
+  "updated_at": "2026-09-17 10:27 JST",
   "kpi": {
     "month_gmv": 97083,
     "month_count": 28,
     "month_aov": 3467,
-    "today_gmv": 2963,
-    "today_count": 1,
+    "today_gmv": 0,
+    "today_count": 0,
     "total_gmv": 907036,
     "total_count": 297,
     "pipeline_count": 6,
@@ -13,11 +13,6 @@
     "cancel_month": 0
   },
   "daily": [
-    {
-      "date": "08-18",
-      "gmv": 2963,
-      "count": 1
-    },
     {
       "date": "08-19",
       "gmv": 5926,
@@ -162,6 +157,11 @@
       "date": "09-16",
       "gmv": 2963,
       "count": 1
+    },
+    {
+      "date": "09-17",
+      "gmv": 0,
+      "count": 0
     }
   ],
   "monthly": [
