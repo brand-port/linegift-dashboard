@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-18 08:51 JST",
+  "updated_at": "2026-09-18 10:51 JST",
   "kpi": {
-    "month_gmv": 97083,
-    "month_count": 28,
-    "month_aov": 3467,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 907036,
-    "total_count": 297,
-    "pipeline_count": 7,
-    "pipeline_amount": 21666,
+    "month_gmv": 103009,
+    "month_count": 30,
+    "month_aov": 3434,
+    "today_gmv": 5926,
+    "today_count": 2,
+    "total_gmv": 912962,
+    "total_count": 299,
+    "pipeline_count": 5,
+    "pipeline_amount": 15740,
     "cancel_month": 0
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "09-18",
-      "gmv": 0,
-      "count": 0
+      "gmv": 5926,
+      "count": 2
     }
   ],
   "monthly": [
@@ -197,8 +197,8 @@
     },
     {
       "month": "2026-09",
-      "gmv": 97083,
-      "count": 28
+      "gmv": 103009,
+      "count": 30
     }
   ],
   "products": [
@@ -210,9 +210,9 @@
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 81,
-      "orders": 81,
-      "gmv": 240003
+      "units": 83,
+      "orders": 83,
+      "gmv": 245929
     },
     {
       "name": "アソート・ヴァニーユ M-3",
@@ -261,8 +261,8 @@
   "status": [
     {
       "label": "取引完了",
-      "count": 297,
-      "amount": 907036
+      "count": 299,
+      "amount": 912962
     },
     {
       "label": "取引中止",
@@ -276,11 +276,6 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 5926
-    },
-    {
-      "label": "支払待ち",
       "count": 2,
       "amount": 5926
     }
