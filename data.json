@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-02 13:45 JST",
+  "updated_at": "2026-10-02 16:41 JST",
   "kpi": {
-    "month_gmv": 0,
-    "month_count": 0,
-    "month_aov": 0,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 986108,
-    "total_count": 323,
-    "pipeline_count": 13,
-    "pipeline_amount": 40461,
+    "month_gmv": 14815,
+    "month_count": 5,
+    "month_aov": 2963,
+    "today_gmv": 14815,
+    "today_count": 5,
+    "total_gmv": 1000923,
+    "total_count": 328,
+    "pipeline_count": 8,
+    "pipeline_amount": 25646,
     "cancel_month": 0
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "10-02",
-      "gmv": 0,
-      "count": 0
+      "gmv": 14815,
+      "count": 5
     }
   ],
   "monthly": [
@@ -199,20 +199,25 @@
       "month": "2026-09",
       "gmv": 176155,
       "count": 54
+    },
+    {
+      "month": "2026-10",
+      "gmv": 14815,
+      "count": 5
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 97,
-      "orders": 97,
-      "gmv": 287411
+      "units": 99,
+      "orders": 99,
+      "gmv": 293337
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
-      "units": 94,
-      "orders": 94,
-      "gmv": 278522
+      "units": 97,
+      "orders": 97,
+      "gmv": 287411
     },
     {
       "name": "アソート・ヴァニーユ M-3",
@@ -263,22 +268,17 @@
       "gmv": 3980
     }
   ],
-  "products_coverage": "2026-06〜2026-09",
+  "products_coverage": "2026-06〜2026-10",
   "status": [
     {
       "label": "取引完了",
-      "count": 323,
-      "amount": 986108
+      "count": 328,
+      "amount": 1000923
     },
     {
       "label": "取引中止",
       "count": 11,
       "amount": 33563
-    },
-    {
-      "label": "支払待ち",
-      "count": 6,
-      "amount": 17778
     },
     {
       "label": "受注済み",
@@ -289,6 +289,11 @@
       "label": "メッセージ送信待ち",
       "count": 3,
       "amount": 8889
+    },
+    {
+      "label": "支払待ち",
+      "count": 1,
+      "amount": 2963
     }
   ],
   "cancel_reasons": [
