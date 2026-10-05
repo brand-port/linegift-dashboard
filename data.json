@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 07:29 JST",
+  "updated_at": "2026-10-05 10:21 JST",
   "kpi": {
     "month_gmv": 14815,
     "month_count": 5,
@@ -282,8 +282,8 @@
     },
     {
       "label": "支払待ち",
-      "count": 7,
-      "amount": 22758
+      "count": 8,
+      "amount": 25721
     },
     {
       "label": "受注済み",
@@ -292,8 +292,8 @@
     },
     {
       "label": "メッセージ送信待ち",
-      "count": 2,
-      "amount": 5926
+      "count": 1,
+      "amount": 2963
     }
   ],
   "cancel_reasons": [
