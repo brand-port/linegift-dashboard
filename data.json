@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 22:17 JST",
+  "updated_at": "2026-10-21 10:07 JST",
   "kpi": {
     "month_gmv": 101813,
     "month_count": 33,
@@ -13,11 +13,6 @@
     "cancel_month": 0
   },
   "daily": [
-    {
-      "date": "09-21",
-      "gmv": 8889,
-      "count": 3
-    },
     {
       "date": "09-22",
       "gmv": 0,
@@ -162,6 +157,11 @@
       "date": "10-20",
       "gmv": 0,
       "count": 0
+    },
+    {
+      "date": "10-21",
+      "gmv": 0,
+      "count": 0
     }
   ],
   "monthly": [
@@ -286,14 +286,14 @@
       "amount": 19720
     },
     {
-      "label": "メッセージ送信待ち",
+      "label": "支払待ち",
       "count": 2,
-      "amount": 5926
+      "amount": 7943
     },
     {
-      "label": "支払待ち",
+      "label": "メッセージ送信待ち",
       "count": 1,
-      "amount": 4980
+      "amount": 2963
     }
   ],
   "cancel_reasons": [
