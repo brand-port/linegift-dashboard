@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-02 09:45 JST",
+  "updated_at": "2026-11-02 11:46 JST",
   "kpi": {
-    "month_gmv": 0,
-    "month_count": 0,
-    "month_aov": 0,
-    "today_gmv": 0,
-    "today_count": 0,
-    "total_gmv": 1132596,
-    "total_count": 368,
-    "pipeline_count": 10,
-    "pipeline_amount": 35640,
+    "month_gmv": 7960,
+    "month_count": 2,
+    "month_aov": 3980,
+    "today_gmv": 7960,
+    "today_count": 2,
+    "total_gmv": 1140556,
+    "total_count": 370,
+    "pipeline_count": 9,
+    "pipeline_amount": 30643,
     "cancel_month": 0
   },
   "daily": [
@@ -160,8 +160,8 @@
     },
     {
       "date": "11-02",
-      "gmv": 0,
-      "count": 0
+      "gmv": 7960,
+      "count": 2
     }
   ],
   "monthly": [
@@ -204,14 +204,19 @@
       "month": "2026-10",
       "gmv": 146488,
       "count": 45
+    },
+    {
+      "month": "2026-11",
+      "gmv": 7960,
+      "count": 2
     }
   ],
   "products": [
     {
       "name": "【LINEギフト限定】マカロン・ヴァニーユ 5個入 |誕生日ギフトボックス",
-      "units": 120,
-      "orders": 120,
-      "gmv": 360645
+      "units": 121,
+      "orders": 121,
+      "gmv": 364625
     },
     {
       "name": "【LINEギフト限定】極厚バニラバターサンド サブレ・オ・ブール 3個入 |誕生日ギフトボックス",
@@ -227,9 +232,9 @@
     },
     {
       "name": "サブレ・ヒューモルガン・アソート 12枚",
-      "units": 4,
-      "orders": 4,
-      "gmv": 15920
+      "units": 5,
+      "orders": 5,
+      "gmv": 19900
     },
     {
       "name": "シロエ ショコラ バー 中サイズ",
@@ -268,12 +273,12 @@
       "gmv": 3980
     }
   ],
-  "products_coverage": "2026-06〜2026-10",
+  "products_coverage": "2026-06〜2026-11",
   "status": [
     {
       "label": "取引完了",
-      "count": 368,
-      "amount": 1132596
+      "count": 370,
+      "amount": 1140556
     },
     {
       "label": "取引中止",
@@ -288,12 +293,12 @@
     {
       "label": "メッセージ送信待ち",
       "count": 2,
-      "amount": 7960
+      "amount": 6943
     },
     {
       "label": "支払待ち",
-      "count": 2,
-      "amount": 7960
+      "count": 1,
+      "amount": 3980
     }
   ],
   "cancel_reasons": [
